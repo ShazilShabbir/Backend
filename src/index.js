@@ -9,7 +9,7 @@ dotenv.config({
 connectDB()
   .then(() => {
 
-    app.on("errror",(err)=>{
+    app.on("error",(err)=>{
       console.log("ERRR:",err);
       throw err
     })
